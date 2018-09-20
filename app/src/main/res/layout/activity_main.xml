@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pr_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.airwen.plate.RecognizerActivity">
+
+    <SurfaceView
+        android:id="@+id/pr_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/pr_capture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/capture_photo"
+        android:layout_marginBottom="30dp"
+        />
+    <ImageView
+        android:id="@+id/pr_return_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_white"
+        android:layout_margin="10dp"
+        android:layout_gravity="top|left"
+        />
+
+    <ImageView
+        android:id="@+id/pr_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flash_off_white"
+        android:layout_margin="10dp"
+        android:layout_gravity="top|right"
+        />
+
+    <ImageView
+        android:id="@+id/pr_show_img"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/pr_recognizer_window"
+            android:layout_width="186dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/plate_rect"
+            android:contentDescription="@string/plate_rect" />
+
+        <TextView
+            android:id="@+id/pr_recognizer_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照识别车牌"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

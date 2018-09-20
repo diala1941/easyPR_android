@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="auto_focus" type="id"/>
+    <item name="recognizer" type="id"/>
+    <item name="recognizer_failed" type="id"/>
+    <item name="recognizer_succeeded" type="id"/>
+    <item name="recognizer_error" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="quit" type="id"/>
+
+</resources>
